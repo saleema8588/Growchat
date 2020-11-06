@@ -1,0 +1,163 @@
+input[type="checkbox"]
+{
+  -webkit-appearance: none;
+  visibility: hidden;
+  display: none;
+}
+.check
+{
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 20px;
+  background: black;
+  curser:pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: ease-in 0.5s;
+}
+input[type="checkbox"]:checked ~ .check
+{
+  background:#F8E9D7;
+  box-shadow: 0 0 0 12000px black;
+}
+.check:before
+{
+  content: '';
+  position: absolute;
+  top:2px;
+  left: 2px;
+  background:#F8E9D7;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.5s
+}
+input[type="checkbox"]:checked ~ .check:before
+{
+  transform: translate(50px);
+}
+
+.check:after
+{
+  content: '';
+  position: absolute;
+  top:2px;
+  right: 2px;
+  background:black;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.5s
+}
+input[type="checkbox"]:checked ~ .check:after
+{
+  transform: translate(0px);
+}
+
+input[type=text] {
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 15px;
+  border:none;
+  width:300px;
+  font-weight: normal;
+}
+
+input:focus{
+  outline:none;
+}
+
+.searchbar{
+  padding: 4px;
+  border-radius: 5px;
+  border-color:rgba(138, 104, 12, 0.932);
+  border-style:solid;
+  border-width: thin; 
+  width:auto;
+  margin: 8px 0px 8px 0px;
+  background:white;
+  margin-left:592px;
+  position: relative;
+}
+
+.switch {
+  height:60px;
+  background-color: rgba(42, 156, 38, 0.842);
+  border-bottom-style: solid;
+  border-bottom-color: rgba(28, 126, 25, 0.842);
+  border-width: thin;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+.bgupload{
+  width:20px; float:right; margin:-45px 10px 0px 0px; opacity:0; 
+}
+
+.pupload{
+  width:20px;  margin:0px 0px 0px -110px; opacity:;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body
+{
+  font-family: 'Open Sans', sans-serif;
+   background-color: #F8E9D7;
+   margin: 0;
+   padding:0;
+
+}
+
+.fb-profile img.fb-image-lg{
+    z-index: 1;
+    width: 100%;  
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+.fb-image-profile
+{
+    margin: -90px 10px 0px 50px;
+    z-index: 2;
+    width: 20%; 
+    border-radius: 50%;
+}
+
+@media (max-width:768px)
+{
+    
+.fb-profile-text>h1{
+    font-weight: 700;
+    font-size:16px;
+}
+
+.fb-image-profile
+{
+    margin: -45px 5px 0px 25px;
+    z-index: 2;
+    width: 20%;  
+    
+}
+
+@media (max-width:200px)
+{
+.fb-profile img.fb-image-lg{
+    z-index: 1;
+    width: 100%;  
+    margin-bottom: 10px;
+    height: 300px;
+    margin: -90px 0px 0px 0px;
+}
+)
+
+
+.col-md-8{
+  margin-right:20px;
+  border-radius: 10px;
+}
+
+
