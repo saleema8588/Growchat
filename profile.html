@@ -22,69 +22,92 @@
 <body>
   
 <section class="switch">
-    <label style="margin:18px 8px 0px 8px;">
-      <input value="1" type="checkbox" name="sign[1]"/>
-      <span class="check"></span>
-    </label>
-
-    <label class="searchbar" >
-    <input type="text" placeholder="Search..">
-    <i class="fas fa-search" style="margin-right:8px; color:green;"></i>
-    </label>
-
-
-
-    <a class="icon" href="profile.html">
-    <img align="right" class="fb-image-profile thumbnail" src="photo/profileicon.png" alt="Profile image example" style="height:50px; width:50px; margin:5px 8px 0px 8px;"/> 
-    </a>
-  
-</section>
-
-<section style="margin-bottom:40px; margin-top:20px;">
-  <div class="container"style="background-color:white; border-radius:4px; padding:0px 0px 0px 0px;">
-    <div class="acot" >
-      <div class="fb-profile">
-         
-          <img align="left" class="fb-image-lg" src="photo/background.png" alt="Profile image example" style="margin-top:-21px; border-radius:4px;"/>
-           <input class="bgupload" type="file">
-           <i class="fas fa-edit" style="float:right; margin:-40px 10px 0px 0px; color:white;"></i>       
-
-          <img align="left" class="fb-image-profile thumbnail" src="photo/profileicon.png" alt="Profile image example" /> 
-         
-          <div class="fb-profile-text" style="margin-left:320px;">
-              <h1>Eli Macy</h1>
-              <p>Girls just wanna go fun.</p>
-            
-              <input class="pupload" type="file">
-              <i class="fas fa-edit" style="margin:0; color:0px 0px 0px -110px ;"></i> 
-          
+  <div class="top">
+    <div class="row">
+      <div class="col-md-2">
+       <label>
+       <input value="1" type="checkbox" name="sign[1]"/>
+       <span class="check"></span>
+       </label>
+      </div>
+    
+ 
+      <div class="col-md-6">
+       <label class="searchbar" >
+       <input type="text" placeholder="Search..">
+       <i class="fas fa-search"></i>
+       </label>
+      </div>
+    
+    <div class="col-md-4">        
+      <div class="dropdown">
+        
+            <img align="right" class="fb-image-profile-thumbnail" src="photo/profileicon.png"/>
+              
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+           <a class="dropdown-item" href="profile.html">Profile</a>
+           <a class="dropdown-item" href="usersetting.html">Setting</a>
+           <a class="dropdown-item" href="#">Log Out</a>
           </div>
 
       </div>
     </div>
-  </div> <!-- /container -->  
+  
+    </div>
+  </div>
 </section>
 
-<section>
+<section class="profile">
+  <div class="profilecon">
+  <div class="container">
+    <div class="acot" >
+      <div class="fb-profile">
+         
+          <img align="left" class="fb-image-lg" src="photo/background.png" alt="Profile image example"/>
+  
+          <img align="left" class="fb-image-profile thumbnail" src="photo/profileicon.png" alt="Profile image example" /> 
+         
+          <div class="fb-profile-text">
+              <h1>Eli Macy</h1>
+              <p>Girls just wanna go fun.</p>
+          </div>
+
+        
+
+
+      </div>
+    </div>
+  </div> <!-- /container -->  
+  </div>
+</section>
+
+<section class="postandcontact">
   <div class="container">
    <div class="row">
     <div class="col-md-8">
-      <div class="post" style="background-color:white; border-radius:4px; padding:1px 10px 1px 10px; margin-left:-15px;">
+      <div class="post">
       <h2>Post</h2>
       <hr>
-      <p style ="height:500px;"></p>
+      <div class="dropdownsort">
+       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort By</button>
+         <div class="dropdown-menusort" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">Most Popular</button>
+            <button class="dropdown-item" type="button">Newest</button>
+            <button class="dropdown-item" type="button">Oldest</button>
+        </div>
+      </div>
+      <p></p>
       </div>
     </div>         <!--col-md-8-->
 
 
-   <div class="col-md-4" style="background-color:white; border-radius:4px; padding:1px 10px 1px 10px;">
-     <h2>Friends</h2>
+   <div class="col-md-4">
+     <h2>Contact</h2>
      <hr>
-     <p style="height:300px;"></p>
-     <ul>
-       <li></li>
-     </ul>
-    </div>        <!--col-md-4-->
+     <h3>Friends</h3>
+     <h3>Communities</h3>
+     <p></p>
+         </div>        <!--col-md-4-->
 
   </div>          <!--row-->
   </div>          <!--container-->
@@ -94,7 +117,15 @@
 
 </body>
 
-  <script src="prfile.js"></script>
+<footer>
+
+
+
+</footer>
+
+
+
+  <script src="profile.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 	 crossorigin="anonymous">
 	</script>
@@ -104,5 +135,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 	 crossorigin="anonymous">
 	</script>
+
 
 </html>

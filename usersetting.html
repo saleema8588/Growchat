@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js">
+	</script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js">
+	</script>
+	<!------ Include the above in your HEAD tag ---------->
+
+	<title>Setting | GrowChat</title>
+	<link href="usersetting.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/8e6323a19a.js" crossorigin="anonymous">
+
+	</script>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/png" href="photo/favicon.png" />
+
+</head>
+
+<body>
+
+	<section class="switch">
+    <div class="top">
+		<div class="row">
+			<div class="col-md-2">
+				<label>
+       <input value="1" type="checkbox" name="sign[1]"/>
+       <span class="check"></span>
+       </label>
+      </div>
+ 
+      <div class="col-md-6">
+       <label class="searchbar" >
+       <input type="text" placeholder="Search..">
+       <i class="fas fa-search"></i>
+       </label>
+      </div>
+    
+    <div class="col-md-4">        
+      <div class="dropdown">
+        
+            <img align="right" class="fb-image-profile-thumbnail" src="photo/profileicon.png"/>
+              
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+           <a class="dropdown-item" href="profile.html">Profile</a>
+           <a class="dropdown-item" href="usersetting.html">Setting</a>
+           <a class="dropdown-item" href="#">Log Out</a>
+          </div>
+
+      </div>
+    </div>
+  
+    </div>
+    </div>
+</section>
+
+<section class= "settingcon">
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-md-2">
+          <div class="side">
+          <h1>Setting</h1>
+          <a href="usersetting.html"><h2>Account</h2></a> 
+          <a href="privacy.html"><h2>Privacy</h2></a> 
+          </div>      
+        </div>
+
+        <div class="col-md-8">
+        <div class="heading">
+        <hr>
+        </div>
+       
+
+        <div class="outline">
+          <div class="accountinfo">
+
+           <div class="emailinfo">
+            <p1>Email Address</p1>
+              <div class="inputemail">
+               <p2>example@gmail.com</p2>
+               
+               
+               <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="float:right; background-color: rgba(138, 104, 12, 0.932); color:white; border-color:rgba(138, 104, 12, 0.932);">Change</button>
+           
+               <!-- Modal -->
+               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Update Email</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+        
+                  </div>
+                  <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                 </div>
+               </div>
+               </div>
+
+
+              </div>
+           </div>
+          
+          <hr>
+           <div class="phoneinfor" style="margin: 40px 0px 40px 0px">
+            <p1>Phone Number</p1> 
+              <div class="inputemail">
+               <p2>example@gmail.com</p2>
+
+               <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="float:right; background-color: rgba(138, 104, 12, 0.932); color:white; border-color:rgba(138, 104, 12, 0.932);">Change</button>
+           
+               <!-- Modal -->
+               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Update Email</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+        
+                  </div>
+                  <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                 </div>
+               </div>
+               </div>
+
+
+              </div>
+           </div>
+           
+           <hr>
+           <div class="nameinfor" style="margin: 40px 0px 40px 0px">
+            <p1>Full Name</p1> 
+              <div class="inputname">
+               <p2>example@gmail.com</p2>                                      
+              </div>
+           </div>
+          
+          <hr>
+           <div class="userinfo" style="margin: 40px 0px 40px 0px">
+            <p1>User Name</p1> 
+              <div class="inputuser">
+               <p2>example@gmail.com</p2>
+              </div>
+           </div>
+          
+          <hr>
+           <div class="passinfo" style="margin: 40px 0px 40px 0px">
+            <p1>Password</p1> 
+              <div class="inputpass">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="float:right; background-color: rgba(138, 104, 12, 0.932); color:white; border-color:rgba(138, 104, 12, 0.932);">Change</button>
+           
+               <!-- Modal -->
+               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Update Email</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+
+                  <div class="modal-body">
+        
+                  </div>
+                  <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+
+                 </div>
+               </div>
+               </div>
+
+
+              </div>
+           </div>
+
+          <hr>
+           <div class="descriptinfo" style="margin: 40px 0px 40px 0px">
+            <p1>Description</p1> 
+              <div class="inputdescript">
+               <p2>example@gmail.com</p2>
+
+               <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="float:right; background-color: rgba(138, 104, 12, 0.932); color:white; border-color:rgba(138, 104, 12, 0.932);">Change</button>
+           
+               <!-- Modal -->
+               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Update Email</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+        
+                  </div>
+                  <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                 </div>
+               </div>
+               </div>
+
+               
+              </div>
+           </div>
+
+           <hr>
+           <div class="imageinfo" style="margin: 40px 0px 40px 0px">
+            <p1>Upload Image</p1> 
+              <div class="inputimage">
+               <p2>example@gmail.com</p2>
+              </div>
+           </div>
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+      </div>
+    </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+</body>
+
+<footer>
+
+
+
+</footer>
+
+
+
+  <script src="usersetting.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	 crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	 crossorigin="anonymous">
+	</script>
+
+
+</html>
