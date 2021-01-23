@@ -11,9 +11,9 @@
 	</script>
 	<!------ Include the above in your HEAD tag ---------->
 
-	<title>Setting | GrowChat</title>
+	<title>Settings | GrowChat</title>
 	<link href="usersetting.css" rel="stylesheet" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/8e6323a19a.js" crossorigin="anonymous">
 
 	</script>
@@ -24,8 +24,7 @@
 </head>
 
 <body>
-
-	<section class="switch">
+ <section class="switch">
     <div class="top">
 		<div class="row">
 			<div class="col-md-2">
@@ -37,8 +36,8 @@
  
       <div class="col-md-6">
        <label class="searchbar" >
-       <input type="text" placeholder="Search..">
        <i class="fas fa-search"></i>
+       <input type="text" placeholder="Search">
        </label>
       </div>
     
@@ -48,9 +47,10 @@
             <img align="right" class="fb-image-profile-thumbnail" src="photo/profileicon.png"/>
               
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-           <a class="dropdown-item" href="profile.html">Profile</a>
-           <a class="dropdown-item" href="usersetting.html">Setting</a>
-           <a class="dropdown-item" href="#">Log Out</a>
+           <a class="dropdown-item" href="profile.html"><i class="fas fa-user-alt"></i>Profile</a>
+           <a class="dropdown-item" href="message.html"><i class="fas fa-comments"></i>Message</a>
+           <a class="dropdown-item" href="usersetting.html"><i class="fas fa-cog"></i>Settings</a>
+           <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Log Out</a>
           </div>
 
       </div>
@@ -64,48 +64,79 @@
     <div class="container">
       
       <div class="row">
+        
+        <div class="setting">
+        <h1>Settings</h1>
+        <hr>
+        </div>
         <div class="col-md-2">
           <div class="side">
-          <h1>Setting</h1>
-          <a href="usersetting.html"><h2>Account</h2></a> 
+          <div class="account">
+          <a href="usersetting.html"><h2>Account</h2></a>
+          </div>
+          
+          <div class="privacy">
           <a href="privacy.html"><h2>Privacy</h2></a> 
+          </div>
+          
           </div>      
         </div>
 
         <div class="col-md-8">
-        <div class="heading">
-        <hr>
-        </div>
-       
-
+            
         <div class="outline">
           <div class="accountinfo">
 
+           <!--<div class="nameinfor">
+            <p1>Full Name</p1> 
+              <div class="inputname">
+               <p2>Eli Macy</p2>                                      
+              </div>
+           </div>
+          
+          <hr>
+           <div class="userinfo">
+            <p1>User Name</p1> 
+              <div class="inputuser">
+               <p2>eli_macy</p2>
+              </div>
+           </div>
+          -->
+
+           
            <div class="emailinfo">
             <p1>Email Address</p1>
               <div class="inputemail">
-               <p2>example@gmail.com</p2>
+               <p2>elimacy@gmail.com</p2>
                
                
-               <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="float:right; background-color: rgba(138, 104, 12, 0.932); color:white; border-color:rgba(138, 104, 12, 0.932);">Change</button>
-           
+               <!-- Button trigger modal for Email Address -->
+               <div class="btntrigger">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#emailModal">Change Email</button>
+               </div>
+
                <!-- Modal -->
-               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
                <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Update Email</h5>
+                    <h5 class="modal-title" id="emailModalLabel">
+                      <i class="fas fa-envelope-open-text"></i>Update Email
+                    </h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                       </button>
                   </div>
                   <div class="modal-body">
-        
+                    <form action="" method="POST">                     <!--Fill in form action-->
+                     <input type="text" name="emailNumber" placeholder="Current Email">
+                     <br>
+                     <input type="text" name="emailNumber" placeholder="New Email">
+                    </form>
                   </div>
                   <div class="modal-footer">
-                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                         <button type="button" class="btn btn-primary">Save changes</button>
+                         <button type="button" class="btn-btn-secondary" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn-btn-primary">Save changes</button>
                   </div>
                  </div>
                </div>
@@ -115,81 +146,77 @@
               </div>
            </div>
           
-          <hr>
-           <div class="phoneinfor" style="margin: 40px 0px 40px 0px">
-            <p1>Phone Number</p1> 
-              <div class="inputemail">
-               <p2>example@gmail.com</p2>
-
-               <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="float:right; background-color: rgba(138, 104, 12, 0.932); color:white; border-color:rgba(138, 104, 12, 0.932);">Change</button>
-           
-               <!-- Modal -->
-               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-               <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Update Email</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                  <div class="modal-body">
-        
-                  </div>
-                  <div class="modal-footer">
-                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                         <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                 </div>
-               </div>
-               </div>
-
-
-              </div>
-           </div>
-           
            <hr>
-           <div class="nameinfor" style="margin: 40px 0px 40px 0px">
-            <p1>Full Name</p1> 
-              <div class="inputname">
-               <p2>example@gmail.com</p2>                                      
+           <div class="phoneinfor">
+            <p1>Phone Number</p1> 
+              <div class="inputphone">
+               <p2>123-567-8910</p2>
+
+               <!-- Button trigger modal for Phone Number -->
+               <div class="btntrigger">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#numberModal">Change Phone Number</button>
+               </div>
+           
+               <!-- Modal -->
+               <div class="modal fade" id="numberModal" tabindex="-1" role="dialog" aria-labelledby="numberModalLabel" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="numberModalLabel">
+                      <i class="fas fa-mobile-alt"></i>Update Phone Number</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="" method="POST">                     <!--Fill in form action-->
+                     <input type="text" name="emailNumber" placeholder="Current Phone Number">
+                     <br>
+                     <input type="text" name="emailNumber" placeholder="New Phone Number">
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                         <button type="button" class="btn-btn-secondary" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn-btn-primary">Save changes</button>
+                  </div>
+                 </div>
+               </div>
+               </div>
+
+
               </div>
            </div>
           
-          <hr>
-           <div class="userinfo" style="margin: 40px 0px 40px 0px">
-            <p1>User Name</p1> 
-              <div class="inputuser">
-               <p2>example@gmail.com</p2>
-              </div>
-           </div>
-          
-          <hr>
-           <div class="passinfo" style="margin: 40px 0px 40px 0px">
+           <hr>
+           <div class="passinfo">
             <p1>Password</p1> 
               <div class="inputpass">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="float:right; background-color: rgba(138, 104, 12, 0.932); color:white; border-color:rgba(138, 104, 12, 0.932);">Change</button>
-           
+                <!-- Button trigger modal for Password-->
+                <div class="btntrigger">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pwdModal">Change Password</button>
+                </div>
                <!-- Modal -->
-               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal fade" id="pwdModal" tabindex="-1" role="dialog" aria-labelledby="pwdModalLabel" aria-hidden="true">
                <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                  
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Update Email</h5>
+                    <h5 class="modal-title" id="pwdModalLabel"><i class="fas fa-unlock-alt"></i>Update Password</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                       </button>
                   </div>
-
                   <div class="modal-body">
-        
+                    <form action="" method="POST">                     <!--Fill in form action-->
+                     <input type="text" name="password" placeholder="Current Password">
+                     <br>
+                     <input type="text" name="password" placeholder="New Password">
+                     <br>
+                     <input type="text" name="password" placeholder="Confirm New Password">
+                    </form>
                   </div>
                   <div class="modal-footer">
-                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                         <button type="button" class="btn btn-primary">Save changes</button>
+                         <button type="button" class="btn-btn-secondary" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn-btn-primary">Save changes</button>
                   </div>
 
                  </div>
@@ -200,31 +227,79 @@
               </div>
            </div>
 
-          <hr>
-           <div class="descriptinfo" style="margin: 40px 0px 40px 0px">
-            <p1>Description</p1> 
-              <div class="inputdescript">
-               <p2>example@gmail.com</p2>
+           <hr>
+            <div class="imageinfo" >
+            <p1>Upload Image</p1> 
+              <div class="inputimage">
+               <p2></p2>
+
 
                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="float:right; background-color: rgba(138, 104, 12, 0.932); color:white; border-color:rgba(138, 104, 12, 0.932);">Change</button>
-           
+               <div class="btntrigger">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal">Change Image</button>
+               </div>
                <!-- Modal -->
-               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
                <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Update Email</h5>
+                    <h5 class="modal-title" id="imageModalLabel"><i class="fas fa-file-alt"></i>Change Profile or Background</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                       </button>
                   </div>
                   <div class="modal-body">
-        
+                    <form action="" method="POST">                     <!--Fill in form action-->
+                    <h6>Change Profile Image</h6>
+                     <input type="file" id="myFile" name="fileprofile">
+                     <br>
+                     <h6>Change Background Image</h6>
+                     <input type="file" id="myFile" name="filebg">
+                     
+                    </form>
                   </div>
                   <div class="modal-footer">
-                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                         <button type="button" class="btn btn-primary">Save changes</button>
+                         <button type="button" class="btn-btn-secondary" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn-btn-primary">Save changes</button>
+                  </div>
+                 </div>
+               </div>
+               </div>
+
+              </div>
+           </div>
+
+
+           <hr>
+           <div class="descriptinfo">
+            <p1>Description (Optional)</p1> 
+              <div class="inputdescript">
+               <p2></p2>
+
+               <!-- Button trigger modal -->
+               <div class="btntrigger">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#descriptModal">Add or Change Description</button>
+               </div>
+           
+               <!-- Modal -->
+               <div class="modal fade" id="descriptModal" tabindex="-1" role="dialog" aria-labelledby="descriptModalLabel" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="descriptModalLabel"><i class="fas fa-file-alt"></i>Change Description</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-bodytextarea">
+                    <form action="" method="POST">                     <!--Fill in form action-->
+                     <label for="descriptFormControlTextarea1">Fill in Space</label>
+                     <textarea class="form-control" id="descriptFormControlTextarea1" rows="3"></textarea>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                         <button type="button" class="btn-btn-secondary" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn-btn-primary">Save changes</button>
                   </div>
                  </div>
                </div>
@@ -235,12 +310,6 @@
            </div>
 
            <hr>
-           <div class="imageinfo" style="margin: 40px 0px 40px 0px">
-            <p1>Upload Image</p1> 
-              <div class="inputimage">
-               <p2>example@gmail.com</p2>
-              </div>
-           </div>
 
           </div>
         </div>

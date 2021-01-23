@@ -1,6 +1,19 @@
 /* ==========================================================================
    NavBar
    ========================================================================== */
+
+/*Section and Row*/
+.switch {
+  height:60px;
+  background-color: rgba(42, 156, 38, 0.842);
+  border-bottom-style: solid;
+  border-bottom-color: rgba(28, 126, 25, 0.842);
+  border-width: thin;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+.top .row{width:1519.2px; height:60px;}
+
+/*CheckBox and Col*/
 input[type="checkbox"]
 {
   -webkit-appearance: none;
@@ -58,40 +71,40 @@ input[type="checkbox"]:checked ~ .check:after
   transform: translate(0px);
 }
 
-input[type=text] {
+.col-md-2 label {margin:18px 8px 0px 8px;}
+
+
+/*SearchBar and Col*/
+input[type="text"] {
   padding: 4px;
   border-radius: 5px;
   font-size: 15px;
   border:none;
   width:300px;
   font-weight: normal;
+  background:rgb(255, 255, 255);
 }
 
-input:focus{
-  outline:none;
-}
+input:focus{outline:none;}
 
 .searchbar{
   padding: 2px;
-  border-radius: 5px;
-  border-color:rgba(138, 104, 12, 0.932);
-  border-style:solid;
+  border-radius: 8px;
+  border-style:none;
   border-width: thin; 
   width:auto;
-  margin: 10px 0px 8px 400px;
-  background:white;
-  position: relative;
+  margin: 12px 0px 8px 400px;
+  background:rgb(255, 255, 255);
+  position: relative; 
 }
 
-.switch {
-  height:60px;
-  background-color: rgba(42, 156, 38, 0.842);
-  border-bottom-style: solid;
-  border-bottom-color: rgba(28, 126, 25, 0.842);
-  border-width: thin;
-  box-shadow: 0 2px 4px rgb(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
-}
+.col-md-6 label {width:40%;}
+.col-md-6 input {width:80%;}
+.col-md-6 i {margin:5px; color:green;}
+.col-md-6{height:60px}
 
+/*Image and DropDown*/
+.fb-image-profile-thumbnail{height:46px; width:46px; float:right; margin:5px 0px 15px 10px; }
 .fb-image-profile-thumbnail:hover {opacity: 90%}
 
 .dropdown-menu{
@@ -103,58 +116,143 @@ input:focus{
   z-index: 1;
   margin:10px 5px 0px 282px ;
 }
-
 .dropdown-menu a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
 .dropdown-menu a:hover {background-color: #f1f1f1}
-
 .dropdown:hover .dropdown-menu {display: block;}
-
-.col-md-2 label {margin:18px 8px 0px 8px;}
-.col-md-6 i {margin-right:5px; color:green;}
-.col-md-4 img {height:50px; width:50px; margin:5px -18px 0px 0px; }
-.top .row{width:1519.2px; height:60px;}
-
+.dropdown-menu i {margin:8px 8px 8px 0px;}
 
 /* ==========================================================================
    Under Nav
    ========================================================================== */
 
-.settingcon {margin-bottom:40px; margin-top:20px;}
-.container{background-color:white; border-radius:4px; padding:0px 0px 0px 0px;}
+.container{background-color:white; border-radius:4px; padding:0px 0px 0px 0px; margin-bottom:20px; margin-top:20px; width:58%;}
 .container .col-md-2{width:150px;}
-.side{padding:10px 10px 0px 25px;}
-.side h2{font-size: 17px;font-weight: bold; }
-.side h1{font-size: 21px;font-weight: bold; color:black;}
 
-p1{font-size:15px; font-weight:thin; color:black;} /
-p2{font-size:12px;}
+.setting{padding:20px 50px 10px 50px;}  
+.side{padding:10px 10px 0px 35px;}
+.setting hr{width:100%; margin: auto; margin-top:16px;}
+.setting h1{font-size: 27px;}
 
-.side a {
-  color:black;
-  text-decoration:none;
+/* ==========================================================================
+   Left Col
+   ========================================================================== */
+
+
+.side h2{font-size: 17px;}
+.side a { color: #444444;text-decoration:none;}
+
+
+.side .account{width:139.5px; margin-left: -25px; padding: 5px 20px 5px 35px}
+.side .privacy{width:139.5px; margin-left: -25px; padding: 5px 20px 5px 35px}
+
+
+
+/* ==========================================================================
+   Right Col
+   ========================================================================== */
+p1{font-size:16px;} 
+p2{font-size:14px;font-weight:thin; padding:8px 0px 0px 0px;}
+
+.col-md-8{margin-left:35px;}
+.outline{margin-top:-19px;}
+.btntrigger button{color:rgb(138, 104, 12); background-color: white; border:none; padding:2px 4px 2px 4px; float:right; font-size: 13px; outline: 0 !important;box-shadow: none; font-weight:bold;}
+.btntrigger button:hover{color:rgba(138, 104, 12, 0.932); background-color: white; border:none; padding:2px 4px 2px 4px; float:right; font-size: 13px;outline: 0 !important;box-shadow: none;}
+.btntrigger button:focus{color:rgba(138, 104, 12, 0.932); background-color: white; border:none; padding:2px 4px 2px 4px; float:right; font-size: 13px;outline: 0 !important;box-shadow: none;}
+
+
+/*Modal*/
+.settingcon input{
+  border-radius: 5px;
+  padding: 5px;
+  margin: 8px;
+  border-style:solid;
+  border-width: thin;
+  font-size: 13px;
+  background-color: rgba(105, 77, 20, 0.055);
+  width: 220px;
+  border:none;
 }
+.settingcon .modal-body{
+   display: flex;
+   justify-content: center;
+   width:420px;
+}
+.modal-dialog{width:420px;}
 
-.side a:hover{color:#444444;}
+.modal-footer .btn-btn-primary {
+  border-radius: 5px;
+  padding: 5px 8px 5px 8px;
+  margin: 2px;
+  border-style:solid;
+  border-width: thin;
+  font-size: 13px;
+  border-color: rgba(28, 126, 25, 0.842);
+  background-color:  rgba(42, 156, 38, 0.842);
+  color:white;
+  border:none;
+  }
 
+  .modal-footer .btn-btn-secondary {
+  border-radius: 5px;
+  padding: 5px 8px 5px 8px;
+  margin: 2px;
+  border-style:solid;
+  border-width: thin;
+  font-size: 13px;
+  border:none;
+
+  }
+/* ==========================================================================
+   Full Name and Username + Modal
+   ========================================================================== */
+.nameinfor{margin: 40px 0px 40px 0px;}
+.userinfo{margin: 40px 0px 40px 0px;}
+
+/* ==========================================================================
+   Email + Modal
+   ========================================================================== */
 .emailinfo {margin: 40px 0px 40px 0px}
+.inputemail .modal-title {font-size:20px; font-weight:bold;}
+.inputemail .modal-title i{margin-right:8px;}
+/* ==========================================================================
+   Phone Number + Modal
+   ========================================================================== */
+.phoneinfor{margin: 40px 0px 40px 0px}
+.inputphone .modal-title {font-size:20px; font-weight:bold;}
+.inputphone .modal-title i{margin-right:8px;}
+/* ==========================================================================
+   Password + Modal
+   ========================================================================== */
+.passinfo{margin: 40px 0px 40px 0px}
+.inputpass .modal-title {font-size:20px; font-weight:bold;}
+.inputpass .modal-title i{margin-right:8px;}
 
-
-
-
-
+ /* ==========================================================================
+   Upload Image + Modal
+   ========================================================================== */
+.imageinfo{margin: 40px 0px 40px 0px}
+.inputimage .modal-title {font-size:20px; font-weight:bold;}
+.inputimage .modal-title i{margin-right:8px;}
+h6{font-size:14px;}
+/* ==========================================================================
+   Description + Modal
+   ========================================================================== */
+.descriptinfo{margin: 40px 0px 40px 0px}
+.inputdescript .modal-title {font-size:20px; font-weight:bold;}
+.inputdescript .modal-title i{margin-right:8px;}
+.modal-bodytextarea{margin:15px;}
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
 body
 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', serif;
    background-color: #F8E9D7;
    margin: 0;
    padding:0;

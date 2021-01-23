@@ -129,59 +129,13 @@ input:focus{outline:none;}
 /* ==========================================================================
    Under Nav
    ========================================================================== */
-
-
-/*Profile Section*/
-.profile {margin-bottom:40px; margin-top:20px;}
-.profilecon .container {background-color:white; border-radius:4px; padding:0px 0px 0px 0px;}
-.fb-image-lg {margin-top:-21px; border-radius:4px;}
-.fb-profile-text{margin-left:320px;}
-
-
-/*Post and Contact Section*/
-/*Background*/
-.post {background-color:white; border-radius:4px; padding:1px 20px 0px 20px; margin-left:-15px;}
-.postandcontact .container .col-md-4 {background-color:white; border-radius:4px; padding:1px 20px 0px 20px;}
-
-/*Post Col*/
-.postandcontact p{height: 500px;}
-
-
-/*Community Col*/
-.postandcontact .row .communities img{height:60px; width:60px; border-radius: 50%;}
-.communities .row{margin:8px 0px 8px 0px;}
-
-.postandcontact .row .friends img{height:60px; width:60px; border-radius: 50%;}
-.friends .row{margin:8px 0px 8px 0px;}
-
-
- /*Text*/
-.postandcontact h2{font-size: 21px;}
-.postandcontact h3{font-size: 18px;}
-.postandcontact h4{font-size: 15px;}
-
-
-/*DropDown*/
-.dropdownsort{width:70px;}
-.dropdown-menusort{
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 120px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.message {margin-bottom:40px; margin-top:20px;}
+.message .container {background-color:white; border-radius:4px; padding:0px 0px 0px 0px;}
+.message .col-md-6{width:785px; height:100%;background-color: rgba(105, 77, 20, 0.055);
+border-top-right-radius:4px;
+border-bottom-left-radius:4px;
 }
-.dropdown-menusort button {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  border: none;
-  background-color:#f9f9f9;
-}
-.dropdown-menusort button{width:120px;  text-align: justify;}
-.dropdown-menusort button:hover {background-color: #f1f1f1}
-.dropdownsort:hover .dropdown-menusort {display: block;}
+
 
 
 /* ==========================================================================
@@ -244,5 +198,3 @@ body
   margin-right:20px;
   border-radius: 10px;
 }
-
-

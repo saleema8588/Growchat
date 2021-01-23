@@ -10,7 +10,7 @@
 
   <title>Profile | GrowChat</title>
   <link href="profile.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <script src="https://kit.fontawesome.com/8e6323a19a.js" crossorigin="anonymous">
   </script>
 
@@ -22,20 +22,19 @@
 <body>
   
 <section class="switch">
-  <div class="top">
-    <div class="row">
-      <div class="col-md-2">
-       <label>
+    <div class="top">
+		<div class="row">
+			<div class="col-md-2">
+				<label>
        <input value="1" type="checkbox" name="sign[1]"/>
        <span class="check"></span>
        </label>
       </div>
-    
  
       <div class="col-md-6">
        <label class="searchbar" >
-       <input type="text" placeholder="Search..">
        <i class="fas fa-search"></i>
+       <input type="text" placeholder="Search">
        </label>
       </div>
     
@@ -45,16 +44,17 @@
             <img align="right" class="fb-image-profile-thumbnail" src="photo/profileicon.png"/>
               
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-           <a class="dropdown-item" href="profile.html">Profile</a>
-           <a class="dropdown-item" href="usersetting.html">Setting</a>
-           <a class="dropdown-item" href="#">Log Out</a>
+           <a class="dropdown-item" href="profile.html"><i class="fas fa-user-alt"></i>Profile</a>
+           <a class="dropdown-item" href="message.html"><i class="fas fa-comments"></i>Message</a>
+           <a class="dropdown-item" href="usersetting.html"><i class="fas fa-cog"></i>Settings</a>
+           <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Log Out</a>
           </div>
 
       </div>
     </div>
   
     </div>
-  </div>
+    </div>
 </section>
 
 <section class="profile">
@@ -85,6 +85,7 @@
   <div class="container">
    <div class="row">
     <div class="col-md-8">
+
       <div class="post">
       <h2>Post</h2>
       <hr>
@@ -95,19 +96,93 @@
             <button class="dropdown-item" type="button">Newest</button>
             <button class="dropdown-item" type="button">Oldest</button>
         </div>
-      </div>
-      <p></p>
-      </div>
-    </div>         <!--col-md-8-->
+      </div>  <!--DropDown-->
 
+      <div class="ptbox">
+        <div class="row">
+          <div class="inside">
+            
+          </div>
+        </div>
+      </div>
+
+      <p></p>
+      </div>      <!---Post-->
+    </div>         <!--col-md-8-->
+  
 
    <div class="col-md-4">
-     <h2>Contact</h2>
+     <h2>Communities</h2>
      <hr>
-     <h3>Friends</h3>
-     <h3>Communities</h3>
-     <p></p>
-         </div>        <!--col-md-4-->
+
+     <!--- circle 1 --> 
+     
+       <div class="communities">
+
+         <div class="row">
+         <div class="col-md-4">
+         <a href="#"><img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt=""></a>
+         </div>
+         <div class="col-md-4">
+           <h4>Name</h4>
+         </div>
+         </div>
+
+         <div class="row">
+         <div class="col-md-4">
+         <a href="#"><img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt=""></a>
+         </div>
+         <div class="col-md-4">
+           <h4>Name</h4>
+         </div>
+         </div>
+
+         <div class="row">
+         <div class="col-md-4">
+         <a href="#"><img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt=""></a>
+         </div>
+         <div class="col-md-4">
+           <h4>Name</h4>
+         </div>
+         </div>
+
+         <div class="row">
+         <div class="col-md-4">
+         <a href="#"><img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt=""></a>
+         </div>
+         <div class="col-md-4">
+           <h4>Name</h4>
+         </div>
+         </div>
+
+         <div class="seemore">                         <!--See More-->
+         <a href="">See More</a>
+         </div>
+
+        </div>
+
+     <h2>Friends</h2>
+     <hr>
+     <div class="friends">
+
+       <div class="row">
+         <div class="col-md-4">
+         <a href="#"><img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt=""></a>
+         </div>
+         <div class="col-md-4">
+           <h4>Friend</h4>
+         </div>
+         </div>
+         
+     </div>
+    
+    
+    
+    
+    
+    
+    
+    </div>        <!--col-md-4-->
 
   </div>          <!--row-->
   </div>          <!--container-->
